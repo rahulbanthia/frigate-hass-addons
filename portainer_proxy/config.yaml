@@ -1,6 +1,6 @@
 name: Portainer Proxy
-version: "1.5"
-panel_icon: "mdi:cctv"
+version: "1.6"
+panel_icon: "mdi:docker"
 panel_title: Portainer
 slug: portainer-proxy
 description: Proxy addon for Portainer
