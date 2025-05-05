@@ -38,4 +38,4 @@ Set to `false` if you need to know the request is coming from the HA IP. This mi
 
 ## Support
 
-Please [open an issue](https://github.com/blakeblackshear/frigate/issues/new/choose) if you need support.
+Please [open an issue](https://github.com/rahulbanthia/frigate/issues/new/choose) if you need support.
