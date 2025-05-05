@@ -1,0 +1,41 @@
+name: Portainer Proxy
+version: "1.5"
+panel_icon: "mdi:cctv"
+panel_title: Portainer
+slug: portainer-proxy
+description: Proxy addon for Portainer
+url: "https://github.com/portainer/portainer"
+startup: application
+boot: auto
+webui: "https://[HOST]:[PORT:9443]/"
+watchdog: "https://[HOST]:[PORT:9443]/"
+ingress: true
+ingress_port: 9443
+ingress_entry: /
+panel_admin: false
+ports:
+  9443/tcp: 9443
+ports_description:
+  9443/tcp: Web interface (Not required for Hass.io Ingress)
+host_network: false
+devices: []
+usb: false
+tmpfs: false
+full_access: false
+environment: {}
+options:
+  server: "https://127.0.0.1:9443"
+  proxy_pass_host: true
+  proxy_pass_real_ip: true
+schema:
+  server: "match(^https?://.+:\\d+$)"
+  proxy_pass_host: bool
+  proxy_pass_real_ip: bool
+services: []
+arch:
+  - aarch64
+  - amd64
+  - armhf
+  - armv7
+  - i386
+map: []
